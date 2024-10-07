@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Chrome使用时间跟踪器",
+  "version": "1.0",
+  "description": "跟踪Chrome使用时间并显示在左下角，支持流星效果和天女散花模式",
+  "permissions": ["alarms", "storage", "activeTab"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
