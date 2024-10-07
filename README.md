@@ -1,5 +1,6 @@
 # ChromeTime  
 Chrome使用时间跟踪器  
+Chrome、Edge测试可用，其它未知  
 版本V1.0  
 功能：  
   1、显示本次打开chrome使用的实时时间统计；  
